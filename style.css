@@ -1,0 +1,257 @@
+/* Formateo */
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+header {
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    padding: 0 10%;
+}
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    flex-wrap: wrap;
+}
+.footer-item {
+    flex: 1;
+    text-align:center;
+}
+section {
+    width: 1200px;
+    max-width: 100%;
+    margin:auto;
+}
+.swiper-container {
+    width: 100%;
+    height: auto;
+}
+/* Navbar */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+nav li {
+    list-style: none;
+}
+nav li a {
+    color: #323232;
+    text-decoration:none;
+    font-family: 'Roboto', sans-serif;
+
+}
+nav li a:hover,a:active {
+    color:#222222;
+    text-decoration: underline;
+}
+nav li a::after {
+    padding:20px;
+    content: "|";
+  }
+  nav li ul a::after {
+    padding:20px;
+    content: "";
+  }
+.dropdown-menu {
+      display: flex;
+      flex-direction:column;
+      padding-top:30px;
+      position:absolute;
+      background:#FFC430;
+      top:20px;
+      left:-10px;
+  }
+.dropdown-menu li {
+      list-style:none;
+      border-bottom: 1px solid rgba(50, 50, 50, 0.144);
+      padding: 0 20px 10px 0;
+      margin: 10px;
+  }
+.dropdown-menu li:last-of-type {
+    border-bottom: none;
+}
+.dropdown-menu {
+    display:none;
+}
+.dropdown:hover .dropdown-menu {
+    display: flex;
+    flex-direction: column;
+}
+.dropdown {
+    position:relative;
+    z-index:1;
+}
+.dropdown span {
+    z-index: 1;
+    position:relative;
+}
+/* Textos */
+h1, h2, h3, h4 {
+    font-weight: 800;
+    font-size:3em;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 3px;
+    margin-bottom:20px;
+    text-align:center;
+}
+.servicio-description p {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 800;
+    font-size:2em;
+}
+p {
+    color:#323232;
+    font-size:1em;
+}
+.equipo h2 {
+    font-size:2em;
+    margin-bottom:2px;
+}
+#servicios {
+    text-align:center;
+}
+#servicios a {
+    text-decoration:none;
+    color:#323232;
+}
+#servicios a:hover {
+    text-decoration:underline;
+    color:#323232;
+}
+.nuestramedia p {
+    font-family: 'Amatic SC', cursive;
+    text-align:left;
+    font-size:1em;
+    letter-spacing: 2px;
+    width: 800px;
+}
+.text-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    background:linear-gradient(rgb(255, 196, 48, 0.8),rgb(255, 196, 48, 0.6));
+    position: absolute;
+    padding: 25% 0 25% 0;
+  }
+  .text-block:hover {
+    background:linear-gradient(rgba(189, 144, 33, 0.8),rgb(189, 144, 33, 0.6));
+
+  }
+/* Backgrounds */
+body {
+    background-image: url(img/bgbody.jpg);
+}
+footer {
+    background: #FFC430;
+}
+header {
+    background:#FFC430;
+}
+.color-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #FFC430;
+    opacity: 0.6;
+    position: absolute;
+}
+
+/* Secciones */
+.titulo-center {
+    text-align:center;
+    margin:auto;
+}
+.servicio-description {
+    margin: 5% 0;
+}
+.nuestramedia {
+    padding: 10% 0%;
+    margin:auto;
+    display:flex;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
+    font-size: 1.3em;
+    text-align:center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+#equipo {
+    background:linear-gradient(rgb(255, 196, 48, 0.8),rgb(255, 196, 48, 0.8)),url("img/bg-equipo.jpg");
+    max-width: 100%;
+    text-align:center;
+    width: auto;
+}
+.equipo {
+    text-align:center;
+}
+.equipo-container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom:3%;
+    flex-wrap: wrap;
+}
+
+.cajaicon {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.icon {
+    width: 300px;
+    margin:3% auto;
+}
+#trabajos {
+    margin-bottom:10%;
+    text-align: center;
+}
+.trabajos-container {
+    margin: auto;
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 80%;
+    margin:auto;
+}
+.trabajo {
+    margin: 10px;
+    position:relative;
+}
+
+.slider {
+    margin-bottom:20px;
+    text-align: center;
+}
+/* Imagenes */
+.cajaicon img {
+    background:#ffc430;
+    border-radius: 60px;
+    width: 100px;
+}
+#equipo img {
+    width:200px;
+}
+.social img {
+    width:30px;
+}
+.button-back {
+    margin-top:5%;
+}
+.logo {
+    width:200px;
+    height:80px;
+    justify-content: flex-start;
+}
+.mutamos {
+    text-align:center;
+    margin: 0 0 5% 0;
+    width:1200px;
+    max-width: 100%;
+}
