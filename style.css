@@ -516,7 +516,7 @@ header {
     margin: 5% 0;
 }
 
-.nuestramedia p {
+.nuestramedia {
     font-weight: 600;
     font-size: 2em;
     font-family: 'Amatic SC', cursive;
@@ -524,9 +524,6 @@ header {
     margin-bottom: 20px;
     text-align: center;
 
-}
-.nuestramedia {
-    margin: 3% auto;
 }
 #equipo {
     background: linear-gradient(rgb(255, 196, 48, 0.8), rgb(255, 196, 48, 0.8)), url("img/bg-equipo.jpg");
@@ -805,7 +802,7 @@ header {
         width: 150px;
     }
 
-    #nuestramedia p {
+    .nuestramedia {
         font-size: 1.5em;
     }
 
