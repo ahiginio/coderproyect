@@ -51,7 +51,65 @@ section {
     display: flex;
     justify-content: center;
 }
+.overlay {
+  
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s; 
+  }
 
+  .overlay-content {
+    position: relative;
+    top: 10%; 
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+.dropdown-menu {
+    position: relative;
+    z-index: 1000;
+    top:auto;
+    display: none;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: center;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    float:none;
+}
 .menu li {
     padding: 0 2%;
 }
@@ -229,7 +287,6 @@ p {
 }
 #nuestramedia p {
     font-weight: 600;
-    font-size: 2em;
     font-family: 'Amatic SC', cursive;
     letter-spacing: 3px;
     margin-bottom: 20px;
@@ -261,7 +318,7 @@ p {
 
 .content {
     position: relative;
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     margin: auto;
     overflow: hidden;
@@ -798,14 +855,16 @@ header {
 }
 /* Media Query */
 @media screen and (max-width:480px) {
-    .navbar-brand img {
-        width: 150px;
+    .flip-box {
+        max-width: 50%;
+        margin:auto;
     }
-
     .nuestramedia {
         font-size: 1.5em;
     }
-
+    .dropdown-menu {
+        background-color: transparent;
+    }
     .social {
         padding: 0 0 2% 0;
     }
@@ -828,3 +887,11 @@ header {
         width: 200px;
     }
 }
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+      font-size: 40px;
+      top: 15px;
+      right: 35px;
+    }
+  }
