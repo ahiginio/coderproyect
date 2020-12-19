@@ -516,20 +516,18 @@ header {
     margin: 5% 0;
 }
 
-.nuestramedia {
-    padding: 10% 0%;
-    margin: auto;
-    display: flex;
-    font-family: 'Pangolin', cursive;
-    font-weight: 400;
-    font-size: 0.9em;
+.nuestramedia p {
+    font-weight: 600;
+    font-size: 2em;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
     text-align: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    align-items: center;
 
 }
-
+.nuestramedia {
+    margin: 3% auto;
+}
 #equipo {
     background: linear-gradient(rgb(255, 196, 48, 0.8), rgb(255, 196, 48, 0.8)), url("img/bg-equipo.jpg");
     max-width: 100%;
@@ -652,7 +650,6 @@ header {
 }
 .flip-box {
     background-color: transparent;
-    width: 300px;
     height: 200px;
     perspective: 1000px;
 }
