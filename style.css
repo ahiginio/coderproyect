@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-display: swap;
     box-sizing: border-box;
 }
 
@@ -126,6 +127,7 @@ nav li a {
     color: #323232;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
+    font-display: swap;
 
 }
 
@@ -169,6 +171,7 @@ h4 {
     font-weight: 800;
     font-size: 3em;
     font-family: 'Amatic SC', cursive;
+    font-display: swap;
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-align: center;
@@ -219,6 +222,7 @@ i.fab.fa-whatsapp {
     font-weight: 800;
     font-size: 1.5em;
     font-family: 'Amatic SC', cursive;
+    font-display: swap;
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-align: center;
@@ -234,6 +238,7 @@ i.fab.fa-whatsapp {
 }
 .form-contact {
     font-family: 'Roboto', sans-serif;
+    font-display: swap;
 }
 .form-control {
     height: 60px;
@@ -245,6 +250,7 @@ i.fab.fa-whatsapp {
   }
 .servicio-description p {
     font-family: 'Amatic SC', cursive;
+    font-display: swap;
     font-weight: 800;
     font-size: 2em;
 }
@@ -278,6 +284,7 @@ p {
 }
 .contacto p {
     font-family: 'Amatic SC', cursive;
+    font-display: swap;
     font-weight: 800;
     font-size: 1.5em;
 }
@@ -290,6 +297,7 @@ p {
 #nuestramedia p {
     font-weight: 600;
     font-family: 'Amatic SC', sans-serif;
+    font-display: swap;
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-align: center;
@@ -421,6 +429,7 @@ p {
 
 ul.navbar-nav li a {
     font-family: 'Amatic SC', cursive;
+    font-display: swap;
     font-size: 1.6em;
     font-weight: 800;
 }
@@ -453,6 +462,7 @@ ul.navbar-nav li a {
     margin-bottom: 0;
     text-align: center;
     font-family: 'Pangolin', cursive;
+    font-display: swap;
 }
 
 .fa-2x {
@@ -465,6 +475,7 @@ ul.navbar-nav li a {
 /* Backgrounds */
 body {
     font-family: 'Pangolin', cursive;
+    font-display: swap;
     background-color: #f2f2f2;
 }
 header {
@@ -579,6 +590,7 @@ header {
     font-weight: 600;
     font-size: 2em;
     font-family: 'Amatic SC', cursive;
+    font-display: swap;
     letter-spacing: 3px;
     margin-bottom: 20px;
     text-align: center;
