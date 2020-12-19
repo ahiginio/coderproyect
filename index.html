@@ -6,9 +6,9 @@
         integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -19,9 +19,9 @@
     </script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <script src="https://unpkg.com/swiper/swiper-bundle.js" async></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js" async></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js" async ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio - MediaDigital</title>
@@ -71,7 +71,6 @@
         <div class="container">
             <div class="row justify-content-between mb-5">
                 <div class="col-12 swiper-container">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Slides -->
                         <div class="swiper-slide"><img src="img/media-cohete.png" alt="Mutamos tu Empresa"
@@ -99,7 +98,8 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 mt-5 mb-5">
-                    <p class="nuestramedia mt-5">Somos un grupo de profesionales con basta experiencia en el mundo digital. Siempre
+                    <p class="nuestramedia mt-5">Somos un grupo de profesionales con basta experiencia en el mundo
+                        digital. Siempre
                         buscamos adaptarnos a
                         la necesidad del cliente manteniendo sus raíces, y no que el cliente se adapte a nuestro
                         servicio.
@@ -120,26 +120,6 @@
             </div>
         </div>
     </section>
-    <!-- Seccion Background c/ Parallax
-    <section id="nuestramedia">
-        <div class="container">
-            <p class="mt-5">Somos un grupo de profesionales con basta experiencia en el mundo digital. Siempre buscamos adaptarnos a
-                la necesidad del cliente manteniendo sus raíces, y no que el cliente se adapte a nuestro servicio.</p>
-            <div class="nuestramedia">
-                <div class="flip-box">
-                    <div class="flip-box-inner">
-                        <div class="flip-box-front">
-                            <img src="img/front.png" alt="Logo">
-                        </div>
-                        <div class="flip-box-back">
-                            <img src="img/back.png" alt="Logo">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <p>(Somos fanáticos de hacer que las cosas funcionen.)</p>
-        </div>
-    </section> -->
     <!-- Seccion Principal -->
     <section id="servicios" class="container-fluid pt-3 pb-3">
         <div class="row cajaicon">
@@ -172,7 +152,6 @@
     <section class="almundo">
         <div class="container">
             <div class="swiper-container pt-5 pb-5">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide"><img src="img/mutamos.png" alt="Mutamos tu Empresa" class="swiperimg">
@@ -180,8 +159,6 @@
                     <div class="swiper-slide"><img src="img/almundo.png" alt="Mutamos tu Empresa" class="swiperimg">
                     </div>
                 </div>
-                <!-- If we need pagination -->
-                <!-- <div class="swiper-pagination"></div> -->
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1607531085 opacity">
@@ -336,24 +313,18 @@
     </footer>
     <script>
         var mySwiper = new Swiper('.swiper-container', {
-            // Optional parameters
             direction: 'horizontal',
             loop: true,
             autoplay: {
                 delay: 3000,
             },
-            // If we need pagination
             pagination: {
                 el: '.swiper-pagination',
             },
-
-            // Navigation arrows
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
             },
-
-            // And if we need scrollbar
             scrollbar: {
                 el: '.swiper-scrollbar',
             },
