@@ -80,6 +80,8 @@ li.nav-item.dropdown.show {
     text-decoration: none;
     font-size: 36px;
     color: #818181;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 600;
     display: block;
     transition: 0.3s;
   }
@@ -120,7 +122,6 @@ li.nav-item.dropdown.show {
 nav li {
     list-style: none;
     text-align: center;
-    /* padding: 0 40px; */
 }
 
 nav li a {
@@ -319,7 +320,7 @@ p {
 }
 
 .teammember .title {
-    font-size: 1.8em;
+    font-size: 1.6em;
 }
 #clientes h1 {
     text-align: left;
@@ -354,7 +355,7 @@ p {
 }
 
 .content-image {
-    width: 100%;
+    max-width: 100%;
 }
 
 .content-details, .content-details-celeste, .content-details-verde, .content-details-violeta, .content-details-rojo {
@@ -662,9 +663,11 @@ header {
 
 .teammember {
     margin: 10px;
+    padding:0;
 }
 
 /* Imagenes */
+
 .cajaicon img {
     background: #ffc430;
     border-radius: 60px;
@@ -680,14 +683,6 @@ header {
     box-shadow: 1px 1px 8px 2px rgba(197, 197, 197, 0.66);
 }
 
-/* .teammember:hover {
-    transform: rotateZ(40deg);
-    transform:scale(1.2,1.2);
-    transition:2s;
-} */
-/* #equipo img {
-    max-width: 200px;
-} */
 .teammember img {
     position: relative;
 }
@@ -716,6 +711,9 @@ header {
     background-image: url(img/bgbody.jpg);
     height:50px;
 }
+
+/* Flip Box */
+
 .flip-box {
     background-color: transparent;
     height: 200px;
@@ -751,8 +749,43 @@ header {
 .flip-box-back {
     transform: rotateX(180deg);
 }
+/* Back to Top Button */
+
+#button {
+    display: inline-block;
+    background-color: #f2f2f2;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+    border: 1px solid #FFC430;
+  }
+  #button .fa-chevron-up {
+      color: #FFC430;
+      padding-top:18px;
+  }
+  #button:hover {
+    cursor: pointer;
+    background-color: #333;
+  }
+  #button:active {
+    background-color: #555;
+  }
+  #button.show {
+    opacity: 1;
+    visibility: visible;
+  }
 
 /* Slick Slider */ 
+
 .slick-slide {
     margin: 0px 20px;
 }
@@ -867,17 +900,23 @@ header {
 .slick-arrow.slick-hidden {
     display: none;
 }
+
 /* Media Query */
+
 @media screen and (max-width:480px) {
     .flip-box {
         max-width: 50%;
         margin:auto;
+        height:150px;
     }
     .nuestramedia {
         font-size: 1.5em;
     }
     .dropdown-menu {
         background-color: transparent;
+    }
+    .overlay .dropdown-menu a {
+        font-size: 25px;
     }
     .social {
         padding: 0 0 2% 0;
